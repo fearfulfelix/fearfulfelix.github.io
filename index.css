@@ -15,7 +15,6 @@
     text-decoration: none;
     font-size: 17px;
     font-family: 'Roboto Mono', monospace;
-
 }
 .nav .test{
     float: left;
@@ -28,6 +27,37 @@
 
     font-family: 'Roboto Mono', monospace;
 }
+.headofbody{
+    margin-left:0;
+    margin-right: 0;
+    text-align:center;
+    background-image: url("leocover.jpg");
+    background-repeat: no-repeat;
+    padding-bottom: 400px;
+    width: 100%;
+    background-size: 100%;
+    background-position-y: +25%;
+    text-align: center;
+}
+.titletext{
+    position: relative;
+    top: 50%;
+    transform: translateY(+500%);
+    color:white;
+}
+.titlebutton{
+    border-radius: 25px;
+    background: #fff;
+    padding: 10px 15px; 
+    text-emphasis: none;
+    text-decoration: none;
+    color: #000000;
+    position: absolute;
+    top: 50%;                      
+    transform: translate(-50%,-50%);
+    text-align:center;
+}
+
 .content {
     padding: 16px;
     margin-top: 10px;
