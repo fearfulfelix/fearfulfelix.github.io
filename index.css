@@ -1,33 +1,61 @@
 .nav{
   overflow: hidden;
-  background-color: #333;
+  background-color: #040F0F;
   position: fixed;
   top: 0;
   width: 100%;
   border-radius: 0px 0px  25px 25px;
 }
-
-.nav .test{
-    float: left;
+.nav .contactbutton{
+    float: right;
     display: block;
-    color: #fff;
+    color: #C9FBFF;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    border: 1px 1px 0px solid white;
-    border-radius: 25px;
-    font-family: 'Calistoga', cursive;
+    font-family: 'Roboto Mono', monospace;
+
 }
-.titletext{
-    padding: 16px;
-    margin-top: 30px;
-    margin-left: 10%;
+.nav .test{
+    float: left;
+    display: block;
+    color: #C9FBFF;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+
+    font-family: 'Roboto Mono', monospace;
 }
 .content {
     padding: 16px;
     margin-top: 10px;
+    margin-left:10%;
+    margin-right: 10%;
+  }
+  .minibody{
     margin-left:15%;
     margin-right: 15%;
+    background-color:#fff;
   }
-  body {margin:0;}
+  body {
+    margin:0;
+    background-color: #57737A;
+
+}
+footer{
+    text-align:center;
+    margin:0;
+    background-color: #57737A;
+}
+footer a{
+text-emphasis: none;
+text-decoration: none;
+color: #000000;
+}
+.toe{
+    margin-left:15%;
+    margin-right: 15%;
+    background-color:#fff;
+}
