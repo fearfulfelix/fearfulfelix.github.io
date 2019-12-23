@@ -13,6 +13,8 @@ border-right:solid;
 border-bottom:solid;
 border-width: 1.5px;
 border-color:black;
+padding-left: 2px;
+padding-right: 2px;
 }
 .winTitle{
     position:relative;
@@ -68,6 +70,14 @@ border-color:black;
     background: white;
     position: relative;
 
+}
+.WinAddressBox{
+    background: white;
+    position: relative;
+    width:60%;
+    padding-right: 40%;
+    border:solid;
+    border-width: 1px;
 }
 body{
     background: #56AAAA;

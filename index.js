@@ -1,0 +1,1 @@
+document.getElementById("urlGoesHere").innerText = document.URL;
