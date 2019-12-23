@@ -1,92 +1,47 @@
-.nav{
-  overflow: hidden;
-  background-color: #040F0F;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  border-radius: 0px 0px  25px 25px;
-  z-index: +1;
+@font-face {
+    font-family: oldwin;
+    src: url('assets/fonts/oldwin.ttf') format('truetype');
+    }
+.window{
+position:relative;
+margin:5%;
+margin-top: 0%;
+background:#C2C5CA;
+font-size: 20px;
+padding-top:1px;
+border-right:solid;
+border-bottom:solid;
+border-width: 1px;
+border-color:black;
 }
-.nav .contactbutton{
-    float: right;
-    display: block;
-    color: #C9FBFF;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    font-family: 'Roboto Mono', monospace;
+.winTitle{
+    position:relative;
+    background:#0000A8;
+    margin: 3px;
+    color:#FBFAFF;
+    padding:2px;
 }
-.nav .test{
-    float: left;
-    display: block;
-    color: #C9FBFF;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-
-    font-family: 'Roboto Mono', monospace;
-}
-.headofbody{
-    margin-left:0;
-    margin-right: 0;
-    text-align:center;
-    background-image: url("leocover.jpg");
-    background-repeat: no-repeat;
-    padding-bottom: 400px;
-    width: 100%;
-    background-size: 100%;
-    background-position-y: +25%;
-    text-align: center;
-    border-radius: 25px;
-}
-.titletext{
+.winButtons{
+    margin-left:1px;
+    width: 15px;
+    font-size: 15px;
     position: relative;
-    top: 50%;
-    transform: translateY(+500%);
-    color:white;
+    float:right;
+    background:#FBFAFF;
+    color:#000000;
+    text-align: center;
 }
-.titlebutton{
-    border-radius: 25px;
-    background: #fff;
-    padding: 10px 15px; 
-    text-emphasis: none;
-    text-decoration: none;
-    color: #000000;
-    position: absolute;
-    top: 50%;                      
-    transform: translate(-50%,-50%);
-    text-align:center;
+.WinNavigationItem{
+    border-left:solid;
+    border-width: 3px;
+    border-color:#838489;
 }
-
-.content {
-    padding: 16px;
-    margin-left:10%;
-    margin-right: 10%;
-  }
-  .minibody{
-    margin-left:15%;
-    margin-right: 15%;
-    background-color:#fff;
-  }
-  body {
-    margin:0;
-    background-color: #57737A;
-
+.webContent{
+    border:solid;
+    border-width:1px;
+    border-color:#838489;
+    background: white;
 }
-footer{
-    text-align:center;
-    margin:0;
-    background-color: #57737A;
-}
-footer a{
-text-emphasis: none;
-text-decoration: none;
-color: #000000;
-}
-.toe{
-    margin-left:15%;
-    margin-right: 15%;
-    background-color:#fff;
+body{
+    background: #56AAAA;
 }
