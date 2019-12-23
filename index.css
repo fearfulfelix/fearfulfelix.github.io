@@ -11,7 +11,7 @@ font-size: 20px;
 padding-top:1px;
 border-right:solid;
 border-bottom:solid;
-border-width: 1px;
+border-width: 1.5px;
 border-color:black;
 }
 .winTitle{
@@ -31,6 +31,31 @@ border-color:black;
     color:#000000;
     text-align: center;
 }
+.WinNavigationItem:hover{
+    border-left:solid;
+    border-bottom:solid;
+    border-bottom-width:1px;
+    border-width:3px;
+    border-color:#838489;
+    animation-name: NavigationItemOnHover;
+    animation-duration: 0.5s;
+}
+@keyframes NavigationItemOnHover{
+ 0%{
+    border-left:solid;
+    border-width: 3px;
+    border-bottom:solid;
+    border-bottom-width:0px;
+    border-color:#838489;
+ }
+ 100%{
+    border-left:solid;
+    border-bottom:solid;
+    border-bottom-width:0.5px;
+    border-width:3px;
+    border-color:#838489;
+ }
+}
 .WinNavigationItem{
     border-left:solid;
     border-width: 3px;
@@ -41,7 +66,16 @@ border-color:black;
     border-width:1px;
     border-color:#838489;
     background: white;
+    position: relative;
+
 }
 body{
     background: #56AAAA;
+}
+a:link{
+    text-decoration: none;
+}
+a:visited{
+    text-decoration: none;
+    color:black;
 }
