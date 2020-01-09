@@ -100,7 +100,13 @@ a:visited{
     text-decoration: none;
     color:black;
 }
-
+.shortcut{
+    text-align:center;
+    display:none;
+}
+.shortcut img{
+    width:50px;
+}
 .webContent::-webkit-scrollbar-thumb{
     background:red;
 }
