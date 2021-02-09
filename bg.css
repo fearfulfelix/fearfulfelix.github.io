@@ -15,6 +15,7 @@
 }
 
 .bg li{
+    color:white;
     position: absolute;
     display: block;
     list-style: none;
@@ -74,7 +75,7 @@
 
 .bg li:nth-child(9){
     left: 70%;
-    animation-delay: 20s;
+    animation-delay: s;
     animation-duration: 18s;
 }
 
@@ -120,7 +121,10 @@
         opacity: 0;
         border-radius: 0;
     }
-     50%{
+    25%{
+        opacity:1;
+    }
+     75%{
         opacity: 1;
      }
     100%{
