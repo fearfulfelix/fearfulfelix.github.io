@@ -1,19 +1,49 @@
-document.getElementById("urlGoesHere").innerText = document.URL;
 
-document.getElementById("closeButton").addEventListener("click", closeTab);
-document.getElementById("shortcut").addEventListener("dblclick", closeTab);
+        function openHome() {
+            document.getElementById("buffer").style.width = "100%";
+            document.getElementById("typing").innerText ="C:\\>CD FT";
+            document.getElementById("typing").classList.remove("hidden");
+            document.getElementById("typing").classList.add("typing");
+            setTimeout(function(){
+            document.getElementById("page1").classList.remove("hidden");
+            document.getElementById("page2").classList.add("hidden");
+            document.getElementById("page3").classList.add("hidden");
+            document.getElementById("buffer").style.width = "0%";
+            document.getElementById("typing").classList.remove("typing");
+            document.getElementById("typing").classList.add("hidden");
+        }, 1500);
+        
 
-function closeTab(){
-    var window = document.getElementById("window");
-    var shortcut = document.getElementById("shortcut");
+        }
+        function openAbout() {
 
-    if(window.style.display === "block"){
-        window.style.display = "none";
-        shortcut.style.display ="block";
-    } else if(window.style.display === "none"){
-        shortcut.style.display ="none";
-        window.style.display ="block";
-    }
+            document.getElementById("buffer").style.width = "100%";
+            document.getElementById("typing").innerText ="C:\\>CD FT\\ABOUT";
+            document.getElementById("typing").classList.remove("hidden");
+            document.getElementById("typing").classList.add("typing");
+            setTimeout(function(){
+            document.getElementById("page2").classList.remove("hidden");
+            document.getElementById("page1").classList.add("hidden");
+            document.getElementById("page3").classList.add("hidden");
+            document.getElementById("buffer").style.width = "0%";
+            document.getElementById("typing").classList.remove("typing");
+            document.getElementById("typing").classList.add("hidden");
+        }, 1500);
 
-
-}
+        }
+        
+        function openContact() {
+            document.getElementById("buffer").style.width = "100%";
+            document.getElementById("typing").innerText ="C:\\>CD FT\\CONTACT";
+            document.getElementById("typing").classList.remove("hidden");
+            document.getElementById("typing").classList.add("typing");
+            setTimeout(function(){
+            document.getElementById("page3").classList.remove("hidden");
+            document.getElementById("page2").classList.add("hidden");
+            document.getElementById("page1").classList.add("hidden");
+            document.getElementById("buffer").style.width = "0%";
+            document.getElementById("typing").classList.remove("typing");
+            document.getElementById("typing").classList.add("hidden");
+        }, 1500);
+        }
+        openHome();

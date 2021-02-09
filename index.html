@@ -1,41 +1,266 @@
 <!DOCTYPE html>
-<html style="font-family: 'oldwin';">
-    <head>
-        <title>F|T</title>
-        <link href="style.css" rel="stylesheet">
-        <script src="index.js" defer></script>
-    </head>
-    <body>
-            <div class="shortcut" id="shortcut"><img src="assets/images/pixellike.png"><br> FT &nbsp; web Browser</div>
-            <div class ="window" id="window" style="display:block">
-            <div class ="winTitle">
-                Felix Turgeon - Web Browser
-                <span class="winButtons" id="closeButton">x</span>  <span class="winButtons">0</span>  <span class="winButtons">_</span>
+<html>
+<head>
+    <link href="bg.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            color:white;
+            font-family: 'Space Mono', monospace;
+            overflow: hidden;
+        }
+        .page{
+            
+            z-index: -1;
+            position: absolute;
+            height:100%;
+            width:100%;
+            
+        }
+        
+        .sidebar {
+            float:right;
+            height: 100vh; 
+            width: 4%; 
+            z-index: 2; 
+            top: 0; 
+            left: 0;
+            background-color: black; 
+            
+        }
+        .corner{
+            font-family: 'Press Start 2P', cursive;
+        }
+        a{
+            text-decoration: underline;
+            color:#fff;
+        }
+        /* The navigation menu links */
+        .sidebar a {
+            font-family: 'Press Start 2P', cursive;
+            padding-top: 87px;
+            padding-bottom:50px;
+            margin-right:50px;
+            text-decoration: none;
+            font-size: 15px;
+            color: #fff;
+            display: block;
+            transform:translate(0,-25px) rotate(-90deg);
+        }
+        .hidden{
+            display: none;
+        }
+        
+        .left-right{
+            height:100%;
+            display: flex;
+            
+            align-items:center;
+        }
+        .left{
+            flex: 0.5 2 0px;
+        }
+        .right{
+            flex: 1 1 0px;
+        }
+        h1{
+            font-family: 'Press Start 2P', cursive;
+        }
+        h2{
+            font-family: 'Press Start 2P', cursive;
+            margin:0%;
+        }
+        .buffer{
+            width: 0;
+            
+            background-color: black;
+            transition: 0.5s;
+            
+            
+            
+        }
+        .typing{
+            font-family: 'Press Start 2P', cursive;
+            float:left;
+            overflow: hidden;
+            white-space: nowrap; 
+            margin: 0 auto; 
+            letter-spacing: .15em; 
+            animation: typing 4s steps(80, end);
+        }
+        
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+        
+        .about-left-panel{
+            position:relative;
+            display: flex;
+            flex-direction: column;
+            /*background-color: #313547;*/
+            height:100%;
+            
+        }
+        .top{
+            
+            flex: 0.5 2 0px;
+            align-content: center;
+            
+        }
+        .pfp{
+            border-radius: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            align-self: center;
+            height:15vw;
+            width:15vw;
+            transform: translate(0,-50px);            
+            background-position: center;
+            background-image: url('untitled.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .bottom{
+            flex: 2 1 0px;
+            height:100%;
+        }
+        
+        
+    </style>
+    
+    <script src="index.js"defer></script>
+</head>
+<body>
+    <div class="bg-container">
+        <div class="bg">
+            <li>.</li>
+            <li>•</li>
+            <li>°</li>
+            <li>*</li>
+            <li>✸</li>
+            <li>✧</li>
+            <li>.</li>
+            <li>•</li>
+            <li>°</li>
+            <li>*</li>
+            <li>✸</li>
+            <li>✧</li>
+            <li>.</li>
+            <li>•</li>
+            <li>°</li>
+            <li>*</li>
+            <li>✸</li>
+            <li>✧</li>
+            <li>.</li>
+            <li>•</li>
+            <li>°</li>
+            <li>*</li>
+            <li>✸</li>
+            <li>✧</li>
+        </div>
+    </div>
+    <div class="sidebar">
+        <br>
+        <a href="javascript:void(0)" onclick="openHome()">home</a>
+        <a></a>
+        <a href="javascript:void(0)" onclick="openAbout()">About</a>
+        <a></a>
+        <a href="javascript:void(0)" onclick="openContact()">Contact</a>
+    </div>
+    
+    <div class="page" id="page1">
+        
+        <div class="corner">C:\FT></div>
+        <div class="left-right">
+            <div class="left">
+                <ul>
+                    <li>Student</li>
+                    <li>programmer</li>
+                    <li>designer</li>
+                    <li>analyst</li>
+                </ul>
             </div>
-            <div class="winNavigation">
-            <span class="WinNavigationItem"></span>&nbsp;
-            <span class="WinNavigationItem"> <a href=#><u>H</u>ome</a></span>&nbsp;
-            <span class="WinNavigationItem"> <a href="about.html"><u>A</u>bout me</a></span> &nbsp;
-            <span class="WinNavigationItem"> <a href="contact.html"><u>C</u>ontact</a></span>
+            <div class="right">
+                <span style="font-size: 40px;">
+                    <h1><span style="color: #7DCDE0">Hi,</span> <br>I'm Félix</h1>
+                    Nice to meet you
+                </span>
             </div>
-            <hr>
-            <div class="winAddress">
-                <span class="WinNavigationItem" ></span>&nbsp;
-                <span > Address &nbsp;</span>
-                <span class="WinAddressBox" id="urlGoesHere">&#9632; url here...</span>
+        </div>
+        
+    </div>
+    <div class="page" id="page2">
+        
+        <div class="corner">C:\FT\ABOUT></div>
+        <div class="left-right">
+            <div class="left" style="height:60%; padding: 100px;">
+                <div class="about-left-panel">
+                    <div class="top">
+                        <div class ="pfp"></div>
+                    </div>
+                    <div class="bottom"><h2>About me</h2> aint got nothin to say </div>
+                </div>
+            </div>
+            <div class="right">
+                
+                <div class="left-right">
+                    <div class="left">
+                        <h2>Skills</h2>
+                        <ul style="list-style: none;">
+                            <li>Software Developpment</li>
+                            <li>Database Creation & Management</li>
+                            <li>IT and Technical Support</li>
+                            <li>Systems Analysis</li>
+                            <li>put skills here</li>
+                            
+                        </ul>
+                    </div>
+                    <div class = "right">
+                        <h2>languages</h2>
+                        <ul style="list-style: none;">
+                            <li>C++</li>
+                            <li>C#</li>
+                            <li>Visual Basic</li>
+                            <li>Java</li>
+                            <li>SQL</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Python</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="page" id="page3">
+        <div class="corner">C:\FT\CONTACT></div>
+        <div class="left-right">
+            <div class="left">
+                <h1>Contact:</h1>
+                You can connect with me on:
+                <br>
+                Twitter <a href="https://twitter.com/fearful_felix">@fearful_felix</a>
+                <br>
+                Instagram <a href="https://www.instagram.com/burnt_parmesan">@burnt_parmesan</a>
+                <br>
+                Github <a href="https://github.com/fearfulfelix">@fearfulfelix</a>
                 
             </div>
-            <hr>
-
-            <div class="webContent">
-                Hello! My name is Felix, and I am a computer programmer analyst!<br>
-                I am currently pursuing a computer programming degree at Canadore College and I plan on graduating in early 2021!<br>
-                <br>
-                To learn more about me, click on the 'About me' tab. Or if you're looking to reach out to me, check out the 'Contact' tab.
-                    
+            <div class="right">
+                For professional inquiries, you can connect with me on LinkedIn or email me at: <a href="mailto:felixturgeonstudies@gmail.com">felixturgeonstudies@gmail.com</a>
             </div>
-            <hr>
-            <div style="font-family:'Courier New', Courier, monospace;">done.</div>
         </div>
-    </body>
+    </div>
+    <div class="page buffer" id="buffer">
+        <p class="" id="typing">C:\>CD FT</p>
+    </div>
+</body>
 </html>
+
